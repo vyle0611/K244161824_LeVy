@@ -1,0 +1,43 @@
+[hidden] { display: none !important; }
+
+table, th, td { border: 1px solid black; border-collapse: collapse; }
+
+/* Câu 2, 3: Bố cục aside + Grid */
+.layout { display: flex; gap: 20px; }
+aside { width: 240px; }
+aside form { display: flex; flex-direction: column; gap: 6px; }
+
+.product-grid { flex: 1; min-width: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.product-card { border: 1px solid #ccc; padding: 10px; }
+.product-card img { width: 100%; }
+
+/* Câu 5: số sao chèn lên ảnh */
+.img-box { position: relative; }
+.star-badge { position: absolute; top: 0; left: 0; background: yellow; padding: 2px 6px; }
+
+/* Tablet: 2 cột */
+@media (max-width: 992px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); }
+}
+/* Mobile: 1 cột */
+@media (max-width: 600px) {
+    .layout { flex-direction: column; }
+    aside { width: 100%; }
+    .product-grid { grid-template-columns: 1fr; }
+}
+
+/* Skeleton Loading */
+.skeleton { height: 300px; background: #ddd; animation: loading 1s infinite; }
+@keyframes loading {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+/* Câu 6: Mini-cart hiển thị đè lên màn hình */
+#mini-cart { position: absolute; top: 50px; right: 20px; z-index: 100; background: #fff; border: 1px solid #999; padding: 10px; }
+
+/* Câu 7: Form thanh toán */
+#checkout { position: fixed; top: 80px; left: 10%; right: 10%; z-index: 200; background: #fff; border: 1px solid #999; padding: 20px; }
+#checkout input { display: block; }
+.error { color: red; }

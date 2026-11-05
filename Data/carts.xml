@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carts>
+    <cart>
+        <cartId>HD01</cartId>
+        <createdAt>2026-11-05</createdAt>
+        <employeeId>EMP02</employeeId>
+        <customerId>CUST01</customerId>
+        <items>
+            <item>
+                <productId>1</productId>
+                <title>Fjallraven - Foldsack No. 1 Backpack</title>
+                <price>109.95</price>
+                <quantity>1</quantity>
+                <color>Đen</color>
+            </item>
+        </items>
+        <totalAmount>109.95</totalAmount>
+    </cart>
+    <cart>
+        <cartId>HD02</cartId>
+        <createdAt>2026-11-03</createdAt>
+        <employeeId>EMP01</employeeId>
+        <customerId>CUST02</customerId>
+        <items>
+            <item>
+                <productId>5</productId>
+                <title>John Hardy Women's Legends Naga Gold &amp; Silver Dragon Station Chain Bracelet</title>
+                <price>695</price>
+                <quantity>1</quantity>
+                <color>Xanh</color>
+            </item>
+            <item>
+                <productId>7</productId>
+                <title>White Gold Plated Princess</title>
+                <price>9.99</price>
+                <quantity>2</quantity>
+                <color>Trắng</color>
+            </item>
+        </items>
+        <totalAmount>714.98</totalAmount>
+    </cart>
+    <cart>
+        <cartId>HD03</cartId>
+        <createdAt>2026-11-04</createdAt>
+        <employeeId>EMP02</employeeId>
+        <customerId>CUST03</customerId>
+        <items>
+            <item>
+                <productId>14</productId>
+                <title>Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor</title>
+                <price>999.99</price>
+                <quantity>1</quantity>
+                <color>Đen</color>
+            </item>
+            <item>
+                <productId>13</productId>
+                <title>Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin</title>
+                <price>599</price>
+                <quantity>1</quantity>
+                <color>Xanh</color>
+            </item>
+        </items>
+        <totalAmount>1598.99</totalAmount>
+    </cart>
+    <cart>
+        <cartId>HD04</cartId>
+        <createdAt>2026-11-04</createdAt>
+        <employeeId>EMP03</employeeId>
+        <customerId>CUST01</customerId>
+        <items>
+            <item>
+                <productId>2</productId>
+                <title>Mens Casual Premium Slim Fit T-Shirts</title>
+                <price>22.3</price>
+                <quantity>2</quantity>
+                <color>Đen</color>
+            </item>
+            <item>
+                <productId>3</productId>
+                <title>Mens Cotton Jacket</title>
+                <price>55.99</price>
+                <quantity>1</quantity>
+                <color>Trắng</color>
+            </item>
+            <item>
+                <productId>18</productId>
+                <title>MBJ Women's Solid Short Sleeve Boat Neck V</title>
+                <price>9.85</price>
+                <quantity>3</quantity>
+                <color>Đen</color>
+            </item>
+        </items>
+        <totalAmount>130.14</totalAmount>
+    </cart>
+    <cart>
+        <cartId>HD05</cartId>
+        <createdAt>2026-11-05</createdAt>
+        <employeeId>EMP02</employeeId>
+        <customerId>CUST04</customerId>
+        <items>
+            <item>
+                <productId>10</productId>
+                <title>SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</title>
+                <price>109</price>
+                <quantity>1</quantity>
+                <color>Đen</color>
+            </item>
+            <item>
+                <productId>16</productId>
+                <title>Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</title>
+                <price>29.95</price>
+                <quantity>2</quantity>
+                <color>Đỏ</color>
+            </item>
+        </items>
+        <totalAmount>168.9</totalAmount>
+    </cart>
+</carts>

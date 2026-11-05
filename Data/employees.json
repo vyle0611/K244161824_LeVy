@@ -1,0 +1,5 @@
+[
+  { "id": "EMP01", "username": "admin", "password": "123", "name": "Nguyễn Văn Admin", "role": "admin" },
+  { "id": "EMP02", "username": "staff", "password": "123", "name": "Trần Thị Thu Ngân", "role": "staff" },
+  { "id": "EMP03", "username": "staff2", "password": "123", "name": "Lê Quốc Bảo", "role": "staff" }
+]

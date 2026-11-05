@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reviews>
+    <review><reviewId>RV01</reviewId><product_id>1</product_id><customer_id>CUST01</customer_id><rating>5</rating><comment>Balo đẹp, đựng vừa laptop</comment></review>
+    <review><reviewId>RV02</reviewId><product_id>1</product_id><customer_id>CUST02</customer_id><rating>4</rating><comment>Chất liệu tốt</comment></review>
+    <review><reviewId>RV03</reviewId><product_id>1</product_id><customer_id>CUST03</customer_id><rating>4</rating><comment>Giao hàng nhanh</comment></review>
+    <review><reviewId>RV04</reviewId><product_id>2</product_id><customer_id>CUST01</customer_id><rating>3</rating><comment>Áo hơi chật</comment></review>
+    <review><reviewId>RV05</reviewId><product_id>2</product_id><customer_id>CUST04</customer_id><rating>4</rating><comment>Vải mát</comment></review>
+    <review><reviewId>RV06</reviewId><product_id>3</product_id><customer_id>CUST02</customer_id><rating>5</rating><comment>Áo khoác ấm, đáng tiền</comment></review>
+    <review><reviewId>RV07</reviewId><product_id>5</product_id><customer_id>CUST03</customer_id><rating>5</rating><comment>Vòng tay rất sang</comment></review>
+    <review><reviewId>RV08</reviewId><product_id>5</product_id><customer_id>CUST01</customer_id><rating>4</rating><comment>Đúng mô tả</comment></review>
+    <review><reviewId>RV09</reviewId><product_id>7</product_id><customer_id>CUST02</customer_id><rating>3</rating><comment>Bình thường</comment></review>
+    <review><reviewId>RV10</reviewId><product_id>10</product_id><customer_id>CUST04</customer_id><rating>4</rating><comment>Ổ cứng chạy nhanh</comment></review>
+    <review><reviewId>RV11</reviewId><product_id>13</product_id><customer_id>CUST03</customer_id><rating>3</rating><comment>Màn hình ổn trong tầm giá</comment></review>
+    <review><reviewId>RV12</reviewId><product_id>14</product_id><customer_id>CUST02</customer_id><rating>5</rating><comment>Màn hình cong rất đã</comment></review>
+    <review><reviewId>RV13</reviewId><product_id>14</product_id><customer_id>CUST04</customer_id><rating>4</rating><comment>Hơi to so với bàn</comment></review>
+    <review><reviewId>RV14</reviewId><product_id>16</product_id><customer_id>CUST01</customer_id><rating>5</rating><comment>Áo đẹp, mặc vừa</comment></review>
+</reviews>

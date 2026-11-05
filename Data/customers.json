@@ -1,0 +1,6 @@
+[
+  { "id": "CUST01", "username": "khach1", "password": "123", "name": "Nguyễn Văn A", "phone": "0901234567" },
+  { "id": "CUST02", "username": "khach2", "password": "123", "name": "Lê Thị B", "phone": "0987654321" },
+  { "id": "CUST03", "username": "khach3", "password": "123", "name": "Trần Minh C", "phone": "0912345678" },
+  { "id": "CUST04", "username": "khach4", "password": "123", "name": "Phạm Thu D", "phone": "0923456789" }
+]

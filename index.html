@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Bán Hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini Shop</h1>
+        <nav>
+            <button onclick="showSection('products')">Sản phẩm</button>
+            <button onclick="showSection('xml-convert')">Tải &amp; Chuyển XML</button>
+            <button onclick="showSection('carts')">Hóa đơn (XML)</button>
+            <button onclick="showSection('admin')">Dashboard Admin</button>
+            <button id="btn-cart" onclick="toggleMiniCart()">Giỏ hàng (0)</button>
+        </nav>
+    </header>
+
+    <!-- Mini-cart hiển thị đè lên màn hình (Câu 6) -->
+    <div id="mini-cart" hidden></div>
+
+    <!-- Form thông tin giao hàng (Câu 7) -->
+    <div id="checkout" hidden>
+        <form id="checkout-form" novalidate>
+            <h3>Thông tin giao hàng</h3>
+
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name">
+            <span class="error" id="err-name"></span>
+
+            <label for="phone">Số điện thoại</label>
+            <input type="text" id="phone" placeholder="0901234567">
+            <span class="error" id="err-phone"></span>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="abc@gmail.com">
+            <span class="error" id="err-email"></span>
+
+            <label for="address">Địa chỉ</label>
+            <input type="text" id="address">
+            <span class="error" id="err-address"></span>
+
+            <button type="submit">Xác nhận thanh toán</button>
+            <button type="button" onclick="closeCheckout()">Hủy</button>
+        </form>
+    </div>
+
+    <main>
+        <!-- 1. Danh sách sản phẩm (Câu 2) -->
+        <section id="sec-products">
+            <h2>Danh sách sản phẩm</h2>
+            <div class="layout">
+                <aside>
+                    <h3>Tìm kiếm nâng cao</h3>
+                    <form id="search-form">
+                        <label for="keyword">Từ khóa</label>
+                        <input type="text" id="keyword" minlength="2" maxlength="30"
+                               pattern="[^&lt;&gt;{}]*" title="Không nhập các ký tự &lt; &gt; { }"
+                               placeholder="Tên sản phẩm">
+
+                        <label for="min-price">Giá từ ($)</label>
+                        <input type="number" id="min-price" min="0" max="1000" step="1" value="0" required>
+
+                        <label for="max-price">Giá đến ($)</label>
+                        <input type="number" id="max-price" min="0" max="1000" step="1" value="1000" required>
+
+                        <fieldset>
+                            <legend>Màu sắc</legend>
+                            <label><input type="radio" name="color" value="" checked> Tất cả</label>
+                            <label><input type="radio" name="color" value="Đỏ"> Đỏ</label>
+                            <label><input type="radio" name="color" value="Xanh"> Xanh</label>
+                            <label><input type="radio" name="color" value="Đen"> Đen</label>
+                            <label><input type="radio" name="color" value="Trắng"> Trắng</label>
+                        </fieldset>
+
+                        <label for="rating">Rating tối thiểu (0 - 5)</label>
+                        <input type="number" id="rating" min="0" max="5" step="0.5" value="0" required>
+
+                        <label for="category">Danh mục</label>
+                        <select id="category">
+                            <option value="">Tất cả</option>
+                        </select>
+
+                        <button type="submit">Tìm kiếm</button>
+                        <button type="reset">Xóa bộ lọc</button>
+                    </form>
+                </aside>
+
+                <div id="product-list" class="product-grid"></div>
+            </div>
+        </section>
+
+        <!-- 2. Đọc API & Lưu XML -->
+        <section id="sec-xml-convert" style="display:none;">
+            <h2>Đọc API FakeStore &amp; Chuyển sang XML DOM</h2>
+            <br>
+            <button onclick="fetchAndConvertToXML()">Fetch API + Thêm Màu/Tồn kho + Lưu XML vào LocalStorage</button>
+            <br><br>
+            <h3>Nội dung XML (products.xml giả lập):</h3>
+            <textarea id="xml-output" rows="15" style="width: 100%; font-family: monospace;"></textarea>
+        </section>
+
+        <!-- 3. Hóa đơn -->
+        <section id="sec-carts" style="display:none;">
+            <h2>Hóa đơn (carts.xml + đơn hàng đã đặt)</h2>
+            <br>
+            <div id="cart-list"></div>
+        </section>
+
+        <!-- 4. Dashboard Admin & Đăng nhập -->
+        <section id="sec-admin" style="display:none;">
+            <h2>Dashboard Admin / Nhân viên</h2>
+            <br>
+            <div id="admin-content">
+                <h3>Đăng nhập hệ thống</h3>
+                <br>
+                <input type="text" id="username" placeholder="Tên đăng nhập (admin/staff)"><br><br>
+                <input type="password" id="password" placeholder="Mật khẩu (123)"><br><br>
+                <button onclick="login()">Đăng nhập</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Họ và tên Sinh viên: <strong>Lê Vy</strong> | Mã Sinh viên: <strong>K244161824</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
